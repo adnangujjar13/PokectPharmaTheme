@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/activity_menu"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@drawable/background"
+android:orientation="vertical"
+android:scrollbarAlwaysDrawVerticalTrack="false"
+android:paddingBottom="@dimen/activity_vertical_margin"
+android:paddingLeft="@dimen/activity_horizontal_margin"
+android:paddingRight="@dimen/activity_horizontal_margin"
+android:paddingTop="@dimen/activity_vertical_margin"
+tools:context="com.example.adnangujjar.pocketpharmatheme.MenuActivity">
+
+<RelativeLayout
+
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/home_title"
+    android:layout_marginLeft="30dp"
+    android:layout_marginRight="30dp"
+    android:background="#0affffff"
+    android:elevation="4dp"
+    android:orientation="vertical"
+    android:padding="20dp"
+    >
+    <LinearLayout
+        android:weightSum="3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_weight="1"
+            android:weightSum="2"
+            android:orientation="horizontal"
+            android:id="@+id/upperlinearlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <android.support.design.widget.CheckableImageButton
+                android:id="@+id/orderbtn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                />
+            <android.support.v7.widget.AppCompatImageButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:weightSum="2"
+            android:id="@+id/middlelinearlayout"
+            android:layout_below="@+id/upperlinearlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <android.support.design.widget.CheckableImageButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+            <android.support.v7.widget.AppCompatImageButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/lowerlinearlayout"
+            android:layout_below="@+id/middlelinearlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:weightSum="2">
+            <android.support.design.widget.CheckableImageButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                />
+            <android.support.v7.widget.AppCompatImageButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
+
+<TextView
+    android:id="@+id/home_title"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:text="Home"
+    android:textColor="#ffffff"
+    android:textSize="26sp"
+    android:textStyle="bold"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>
+
